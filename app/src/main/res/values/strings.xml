@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Fancy Chat</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="greeting">Good morning</string>
+    <string name="user_name">Alex bender</string>
+    <string name="chats_title">Chats</string>
+    <string name="manage">Quản lý</string>
+    <string name="user_avatar_desc">User Avatar</string>
+    <string name="add_button_desc">Add item</string>
+    <string name="search_button_desc">Tìm kiếm</string>
+    <string name="menu_discover">Khám phá</string>
+    <string name="menu_chat">Trò chuyện</string>
+    <string name="menu_settings">Cài đặt</string>
+    <string name="lorem_ipsum">
+        test
+    </string>
+</resources>
