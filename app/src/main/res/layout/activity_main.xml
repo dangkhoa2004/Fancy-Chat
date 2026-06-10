@@ -8,130 +8,17 @@
     android:background="@color/bg_main"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgAvatarUser"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/bg_circle_blue"
-        android:contentDescription="@string/user_avatar_desc"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvGreeting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="@string/greeting"
-        android:textColor="@color/text_grey"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/imgAvatarUser"
-        app:layout_constraintTop_toTopOf="@+id/imgAvatarUser" />
-
-    <TextView
-        android:id="@+id/tvUserName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="@string/user_name"
-        android:textColor="@color/text_dark"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imgAvatarUser"
-        app:layout_constraintStart_toEndOf="@+id/imgAvatarUser" />
-
-    <ImageButton
-        android:id="@+id/btnAdd"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/bg_circle_blue"
-        android:contentDescription="@string/add_button_desc"
-        android:src="@android:drawable/ic_input_add"
-        app:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/imgAvatarUser"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgAvatarUser" />
-
-    <ImageButton
-        android:id="@+id/btnSearch"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/bg_circle_pink"
-        android:contentDescription="@string/search_button_desc"
-        android:src="@android:drawable/ic_menu_search"
-        app:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
-        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
-        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvStories"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:clipToPadding="false"
-        android:orientation="horizontal"
-        android:paddingStart="24dp"
-        android:paddingEnd="8dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toBottomOf="@+id/tvUserName"
-        tools:listitem="@layout/item_story"
-        tools:itemCount="4"/>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layoutChatsContainer"
-        android:layout_width="match_parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/bg_rounded_top_white"
-        android:elevation="4dp"
-        android:paddingTop="32dp"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintTop_toBottomOf="@+id/rvStories">
-
-        <TextView
-            android:id="@+id/tvChatsTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:text="@string/chats_title"
-            android:textColor="@color/text_dark"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tvManage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:text="@string/manage"
-            android:textColor="@color/text_grey"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/tvChatsTitle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tvChatsTitle" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvChats"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="16dp"
-            android:clipToPadding="false"
-            android:paddingBottom="24dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvChatsTitle"
-            tools:listitem="@layout/item_chat"
-            tools:itemCount="5" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

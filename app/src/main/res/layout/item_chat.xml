@@ -8,26 +8,46 @@
     android:paddingHorizontal="24dp"
     android:paddingVertical="12dp">
 
-    <ImageView
-        android:id="@+id/imgChatAvatar"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutAvatar"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:background="@drawable/bg_circle_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgChatAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_circle_blue" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_grey"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="Ok!"
+            android:textColor="@color/text_dark"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/tvChatName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:textColor="@color/text_dark"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imgChatAvatar"
-        app:layout_constraintTop_toTopOf="@+id/imgChatAvatar"
+        app:layout_constraintStart_toEndOf="@+id/layoutAvatar"
+        app:layout_constraintTop_toTopOf="@+id/layoutAvatar"
         tools:text="Design team" />
 
     <TextView
@@ -36,13 +56,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:textColor="@color/text_grey"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/tvChatTime"
-        app:layout_constraintStart_toEndOf="@+id/imgChatAvatar"
+        app:layout_constraintEnd_toStartOf="@+id/tvChatBadge"
+        app:layout_constraintStart_toEndOf="@+id/layoutAvatar"
         app:layout_constraintTop_toBottomOf="@+id/tvChatName"
         tools:text="Awesome" />
 
@@ -50,11 +69,10 @@
         android:id="@+id/tvChatTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:textColor="@color/text_grey"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgChatAvatar"
+        app:layout_constraintTop_toTopOf="@+id/tvChatName"
         tools:text="Today, 12:25" />
 
     <TextView

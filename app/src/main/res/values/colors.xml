@@ -9,4 +9,7 @@
     <color name="blue_primary">#4A72FF</color>
     <color name="green_badge">#50D2A0</color>
     <color name="bg_story_card">#FFFFFF</color>
+    <color name="logout_red">#FF4A6B</color>
+    <color name="bg_item_grey">#F5F6FA</color>
+    <color name="text_black">#000000</color>
 </resources>

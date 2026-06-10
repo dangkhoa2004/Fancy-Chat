@@ -1,22 +1,45 @@
 <resources>
     <string name="app_name">Fancy Chat</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Cài đặt</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="greeting">Good morning</string>
+    <string name="first_fragment_label">Trang chủ</string>
+    <string name="second_fragment_label">Tin nhắn</string>
+    <string name="next">Tiếp theo</string>
+    <string name="previous">Quay lại</string>
+    <string name="greeting">Chào buổi sáng</string>
     <string name="user_name">Alex bender</string>
-    <string name="chats_title">Chats</string>
+    <string name="chats_title">Cuộc trò chuyện</string>
     <string name="manage">Quản lý</string>
-    <string name="user_avatar_desc">User Avatar</string>
-    <string name="add_button_desc">Add item</string>
+    <string name="user_avatar_desc">Ảnh đại diện người dùng</string>
+    <string name="add_button_desc">Thêm mục mới</string>
     <string name="search_button_desc">Tìm kiếm</string>
     <string name="menu_discover">Khám phá</string>
     <string name="menu_chat">Trò chuyện</string>
     <string name="menu_settings">Cài đặt</string>
     <string name="lorem_ipsum">
-        test
+        kiểm tra
     </string>
+    <string name="back_button_desc">Quay lại</string>
+    <string name="title_settings">Cài đặt</string>
+    <string name="account_settings">Cài đặt tài khoản</string>
+    <string name="notifications">Thông báo</string>
+    <string name="report_problem">Báo cáo sự cố</string>
+    <string name="help_support">Trợ giúp &amp; Hỗ trợ</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="personal_details">Thông tin cá nhân</string>
+    <string name="change_passcode">Thay đổi mã khóa</string>
+    <string name="privacy">Quyền riêng tư</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="name_surname">Họ &amp; Tên</string>
+    <string name="username">Tên người dùng</string>
+    <string name="about_me">Giới thiệu về tôi</string>
+    <string name="date_of_birth">Ngày sinh</string>
+    <string name="county_city">Quốc gia &amp; Thành phố</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="show_notifications">Hiển thị thông báo</string>
+    <string name="message_preview">Xem trước tin nhắn</string>
+    <string name="sound">Âm thanh</string>
+    <string name="vibrate">Rung</string>
+    <string name="group_notifications">Thông báo nhóm</string>
+    <string name="reset_notifications">Đặt lại cài đặt thông báo</string>
 </resources>
